@@ -1,11 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Comparador de chelas/title>
+    <title>Comparador de Chelas</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">    
+    <script src="js/app.js"></script>
 </head>
 
 <body>
-    <h1>Comparador de chelas</h1>
+    <h1>Comparador de Chelas</h1>
+    <div id="cerveza">
+        <table>
+            <tr>
+                <td>Presentacion:</td>
+                <td>
+                    <select name="presentacion" id="presentacion">
+                        <option value="1">1 Chela</option>
+                        <option value="4">4 Chelas</option>
+                        <option value="6">6 Chelas</option>
+                        <option value="12">12 Chelas</option>
+                        <option value="20">20 Chelas</option>
+                        <option value="24">24 Chelas</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Marca o nombre:</td>
+                <td><input type="text" id="marca" name="marca"></td>
+            </tr>
+            <tr>
+                <td>Mililitros por Chela:</td>
+                <td><input type="number" id="mililitros" name="mililitros"></input> ml por unidad.</td>
+            </tr>
+            <tr>
+                <td>Precio exhibido:</td>
+                <td><input type="number" id="precio" name="precio"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="A la lista" onclick="concatena_cerveza()"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <ul id="lista">
+        </ul>
+    </div>
 </body>
 
 </html>
