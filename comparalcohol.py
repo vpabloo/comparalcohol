@@ -25,8 +25,6 @@ def crear_cervezas(marca, presentacion, unidades, mililitros, precio):
     cer_list.append(Cerveza(marca, presentacion, unidades, mililitros, precio))
 
 # Compara dos cervezas.
-
-
 def compara(primera, segunda):
     # Obtener el precio por mililitro, primero divide el precio entre la presentación y el resultado entre los mililitros.
     resultado_primera = round(
@@ -37,8 +35,6 @@ def compara(primera, segunda):
     return f"El precio de {cer_list[primera].marca} {cer_list[primera].presentacion} es de ${resultado_primera} por mililitro. \nEl precio de {cer_list[segunda].marca} {cer_list[segunda].presentacion} es de ${resultado_segunda} por mililitro. \n "
 
 # Compara la lista completa de cervezas.
-
-
 def compara_todas():
     for c in range(len(cer_list)):
         resultado = round(
