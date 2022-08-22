@@ -1,3 +1,24 @@
+// Catalogo sin utilizarse
+var cervezas = ["Amstel",
+    "Bohemia",
+    "Carta Blanca",
+    "Coors Light",
+    "Corona",
+    "Coronita",
+    "Dos Equis",
+    "Heineken",
+    "Indio",
+    "Kloster Ligth",
+    "Miller High Life",
+    "Miller Lite",
+    "Sol",
+    "Superior",
+    "Tecate Clara",
+    "Tecate Light",
+    "Tecate Original",
+    "XX"
+];
+
 function concatena_cerveza() {
     var marca = document.getElementById('marca').value;
     var presentacion = document.getElementById('presentacion').value;

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;
+  margin: auto;
+  width: 50%;
+  border: 3px solid DodgerBlue;
+  padding: 10px;
+}
+
+h1 {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+
+select {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+ul li {
+  list-style: square inside url("http://pablovillanueva.com/comparachela/images/favicon.ico");
+  padding: 10px;
+  margin-left: 35px;
+}
