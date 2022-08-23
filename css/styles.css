@@ -1,26 +1,28 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
 body {
-  margin: auto;
-  width: 600px;
-  border: 3px solid #4CAF50;
-  padding: 10px;
-  margin-top: 20px;
+  background: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+#container {
+  margin: 0px auto;
+  width: 50%;
+  min-width: 300px;
+  border: 1px solid #4CAF50;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  margin-top: 10px;
+}
+header{
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #4CAF50;
 }
 
+#cerveza{
+  padding: 5px;
+}
 input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
