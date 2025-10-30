@@ -68,8 +68,8 @@ function renderComparativa() {
         li.style.borderLeftColor = border;
         li.innerHTML = '' +
             '<div class="result-content">' +
-            '  <div class="result-title">' + (it.marca) + ' <span class="result-pres">' + it.presentacion + '×</span></div>' +
-            '  <div class="result-sub">' + it.mililitros + ' ml c/u · Total: $' + it.precio + '</div>' +
+            '  <div class="result-title">' + (it.marca) + ' <span class="result-pres">' + it.presentacion + '&times;</span></div>' +
+            '  <div class="result-sub">' + it.mililitros + ' ml c/u &middot; Total: $' + it.precio + '</div>' +
             '</div>' +
             '<div class="result-badge" aria-label="Precio por mililitro" style="background:' + badgeBg + ';border-color:' + badgeBorder + ';color:' + badgeText + '">$' + it.ppm.toFixed(3) + ' / ml</div>';
         ul.appendChild(li);
