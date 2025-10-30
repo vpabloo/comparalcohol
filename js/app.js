@@ -212,17 +212,17 @@ function compartirWhatsApp(){
     var items = comparativa.slice().sort(function(a, b){ return a.ppm - b.ppm; });
     var lineas = [];
     var best = items[0];
-    lineas.push('🔥 Mejor precio: ' + best.marca + ' (' + best.presentacion + '×, ' + best.mililitros + ' ml c/u) — $' + best.ppm.toFixed(3) + '/ml');
+    lineas.push('Mejor precio: ' + best.marca + ' (' + best.presentacion + ', ' + best.mililitros + ' ml c/u) — $' + best.ppm.toFixed(3) + '/ml');
     lineas.push('');
     lineas.push('Comparativa de cerveza (precio por ml)');
     for (var i=0;i<items.length;i++){
         var it = items[i];
         var idx = (i+1) + ') ';
-        var texto = idx + it.marca + ' (' + it.presentacion + '×, ' + it.mililitros + ' ml c/u, $' + it.precio + ' total) — $' + it.ppm.toFixed(3) + '/ml';
+        var texto = idx + it.marca + ' (' + it.presentacion + ', ' + it.mililitros + ' ml c/u, $' + it.precio + ' total) — $' + it.ppm.toFixed(3) + '/ml';
         lineas.push(texto);
     }
     lineas.push('');
-    lineas.push('Precios comparados en ComparaChela: https://www.comparachela.com');
+    lineas.push('Precios comparados en ComparaChela: https://www.pablovillanueva/comparachela.com');
     var mensaje = lineas.join('\n');
     var url = 'https://wa.me/?text=' + encodeURIComponent(mensaje);
     window.open(url, '_blank');
