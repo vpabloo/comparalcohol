@@ -127,7 +127,7 @@ function cargarListaImagenesBeer() {
         })
         .catch(function () {
             // Fallback a nombres comunes si no hay manifest ni índice
-            return ['images/beer/beer.png', 'images/beer/beer (1).png', 'images/beer/beer (2).png'];
+            return ['images/beer/beer.png', 'images/beer/beer1.png', 'images/beer/beer2.png'];
         });
 }
 
@@ -212,13 +212,13 @@ function compartirWhatsApp() {
     var items = comparativa.slice().sort(function (a, b) { return a.ppm - b.ppm; });
     var lineas = [];
     var best = items[0];
-    lineas.push('Mejor precio: ' + best.marca + ' (' + best.presentacion + ', ' + best.mililitros + ' ml c/u) — $' + best.ppm.toFixed(3) + '/ml');
+    lineas.push('Mejor precio: ' + best.marca + ' (' + best.presentacion + ', ' + best.mililitros + ' ml c/u) &minus; $' + best.ppm.toFixed(3) + '/ml');
     lineas.push('');
     lineas.push('Comparativa de cerveza (precio por ml)');
     for (var i = 0; i < items.length; i++) {
         var it = items[i];
         var idx = (i + 1) + ') ';
-        var texto = idx + it.marca + ' (' + it.presentacion + ', ' + it.mililitros + ' ml c/u, $' + it.precio + ' total) — $' + it.ppm.toFixed(3) + '/ml';
+        var texto = idx + it.marca + ' (' + it.presentacion + ', ' + it.mililitros + ' ml c/u, $' + it.precio + ' total) &minus; $' + it.ppm.toFixed(3) + '/ml';
         lineas.push(texto);
     }
     lineas.push('');
