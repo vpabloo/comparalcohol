@@ -222,7 +222,7 @@ function compartirWhatsApp() {
         lineas.push(texto);
     }
     lineas.push('');
-    lineas.push('Precios comparados en ComparaChela: https://www.pablovillanueva/comparachela.com');
+    lineas.push('Precios comparados en ComparaChela: https://www.pablovillanueva.com/comparachela');
     var mensaje = lineas.join('\n');
     var url = 'https://wa.me/?text=' + encodeURIComponent(mensaje);
     window.open(url, '_blank');
