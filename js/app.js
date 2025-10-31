@@ -4,7 +4,7 @@ var beerImages = [];
 var brandLogoIndex = 0;
 var populares = [
     'Amstel', 'Bohemia', 'Carta Blanca', 'Coors Light', 'Corona', 'Coronita', 'Dos Equis', 'Heineken', 'Indio',
-    'Kloster Light', 'Miller High Life', 'Miller Lite', 'Sol', 'Superior', 'Tecate', 'Tecate Light', 'Tecate Original', 'Victoria', 'Modelo', 'Pacifico'
+    'Kloster Light', 'Miller High Life', 'Miller Lite', 'Sol', 'Superior', 'Tecate', 'Tecate Light', 'Michelub Ultra', 'Modelo', 'Pacifico', 'Victoria',
 ];
 var aliasMarca = {
     'xx': 'Dos Equis',
