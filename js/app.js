@@ -134,7 +134,7 @@ function cargarListaImagenesBeer() {
 function actualizarConteo() {
     var el = document.getElementById('count');
     if (!el) return;
-    el.innerHTML = comparativa.length ? (comparativa.length + ' &Iacute;tem(s)') : 'Sin elementos';
+    el.innerHTML = comparativa.length ? (comparativa.length + ' Chela(s)') : 'Sin elementos';
 }
 
 function exportarCSV() {
